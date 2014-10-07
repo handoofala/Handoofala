@@ -1,0 +1,2 @@
+module ModelBasicsHelper
+end

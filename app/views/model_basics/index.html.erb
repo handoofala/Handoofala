@@ -1,0 +1,29 @@
+<h1>Listing model_basics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Post</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @model_basics.each do |model_basic| %>
+      <tr>
+        <td><%= model_basic.title %></td>
+        <td><%= model_basic.post %></td>
+        <td><%= model_basic.date %></td>
+        <td><%= link_to 'Show', model_basic %></td>
+        <td><%= link_to 'Edit', edit_model_basic_path(model_basic) %></td>
+        <td><%= link_to 'Destroy', model_basic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Model basic', new_model_basic_path %>

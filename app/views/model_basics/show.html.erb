@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @model_basic.title %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @model_basic.post %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @model_basic.date %>
+</p>
+
+<%= link_to 'Edit', edit_model_basic_path(@model_basic) %> |
+<%= link_to 'Back', model_basics_path %>
